@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon bump_files/index.js",
     "server": "json-server-auth db_files/all-dbs.cjs",
+    "start-deploy": "node index.js",
     "test-promises": "ts-node requests.ts"
   },
   "author": "",
