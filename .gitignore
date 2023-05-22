@@ -1,0 +1,4 @@
+node_modules/
+bump_files/
+
+.env
