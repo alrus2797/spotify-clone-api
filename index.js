@@ -8,12 +8,15 @@ const router = jsonServer.router({
   users: []
 })
 
+const middlewares = jsonServer.defaults();
+
 const port = process.env.PORT || 3000
 
 // /!\ Bind the router db to the app
 app.db = router.db
 
 // You must apply the auth middleware before the router
+app.use(middlewares)
 app.use(auth)
 app.use(router)
 app.listen(port, () => {
