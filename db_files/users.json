@@ -1,0 +1,10 @@
+[
+  {
+    "email": "test@mail.com",
+    "password": "$2a$10$MjCf.DxMTGbTU8plKR1JRugEgAl83R9mRzujdlXvB4oMGPTOlVuMe",
+    "username": "Bryce",
+    "id": 1,
+    "birthday": { "day": "02", "month": "07", "year": "1997" },
+    "gender": "male"
+  }
+]

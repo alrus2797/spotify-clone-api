@@ -1,0 +1,574 @@
+[
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFQkIFo7vWoOd",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/latin-274x274_befbbd1fbb8e045491576e317cb16cdf_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Salsa",
+    "type": "link",
+    "id": 1
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFx0uLQR2okcc",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/04da469dd7be4dab96659aa1fa9f0ac9.jpeg"
+      }
+    ],
+    "name": "En casa",
+    "type": "link",
+    "id": 2
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFR9D66iFXqzk",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/cb9d28c9b084483caf81ef9c4a6420af.jpeg"
+      }
+    ],
+    "name": "Cumbia",
+    "type": "link",
+    "id": 3
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFEC4WFtoNRpw",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Pop",
+    "type": "link",
+    "id": 4
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFQIL0AXnG5AK",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/trending-274x274_7b238f7217985e79d3664f2734347b98_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Tendencias",
+    "type": "link",
+    "id": 5
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFzHmL4tf05da",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg"
+      }
+    ],
+    "name": "Estado de ánimo",
+    "type": "link",
+    "id": 6
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFxXaXKP7zcDp",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/26a60378-a374-4cd7-b894-28efa5e154cb.jpg"
+      }
+    ],
+    "name": "Latina",
+    "type": "link",
+    "id": 7
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFFtlLYUHv8bT",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/ee9451b3ed474c82b1da8f9b5eafc88f.jpeg"
+      }
+    ],
+    "name": "Alternativa",
+    "type": "link",
+    "id": 8
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFOOxftoKZxod",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/c6677aa51acf4121b66b9d1f231bd427.png"
+      }
+    ],
+    "name": "RADAR",
+    "type": "link",
+    "id": 9
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFAXlCG6QvYQ4",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/links/workout-274x274.jpg"
+      }
+    ],
+    "name": "Entrenamiento",
+    "type": "link",
+    "id": 10
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFPw634sFwguI",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/084155aeaa724ea1bd393a017d67b709"
+      }
+    ],
+    "name": "EQUAL",
+    "type": "link",
+    "id": 11
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFLb2EqgLtpjC",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/3710b68657574bc79df14bd74629e5ac"
+      }
+    ],
+    "name": "Bienestar",
+    "type": "link",
+    "id": 12
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFCbimwdOYlsl",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/original/genre-images-square-274x274_5e50d72b846a198fcd2ca9b3aef5f0c8_274x274.jpg"
+      }
+    ],
+    "name": "Enfoque",
+    "type": "link",
+    "id": 13
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFCWjUTdzaG0e",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg"
+      }
+    ],
+    "name": "Indie",
+    "type": "link",
+    "id": 14
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFDXXwE9BDJAr",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Rock",
+    "type": "link",
+    "id": 15
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFFzDl7qN9Apr",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/chill-274x274_4c46374f007813dd10b37e8d8fd35b4b_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Para relajarse",
+    "type": "link",
+    "id": 16
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFLYQVFHcXMae",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/6b0729f92b3a4c1db1710fcd258cec76.jpeg"
+      }
+    ],
+    "name": "League of Legends",
+    "type": "link",
+    "id": 17
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFF1br7dZcRtK",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/c5495b9f0f694ffcb39c9217d4ed4375"
+      }
+    ],
+    "name": "Orgullo",
+    "type": "link",
+    "id": 18
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFA6SOHvT3gck",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/fada056dcfd54cd28faf80d62b7059c6.jpeg"
+      }
+    ],
+    "name": "Fiesta",
+    "type": "link",
+    "id": 19
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFCuoRTxhYWow",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/sleep-274x274_0d4f836af8fab7bf31526968073e671c_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Dormir",
+    "type": "link",
+    "id": 20
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFQ00XGBls6ym",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg"
+      }
+    ],
+    "name": "Hip hop",
+    "type": "link",
+    "id": 21
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFCfObibaOZbv",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/0d39395309ba47838ef12ce987f19d16.jpeg"
+      }
+    ],
+    "name": "Gaming",
+    "type": "link",
+    "id": 22
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFObNLOHydSW8",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/495fadcefe234607b14b2db3381f3f5d.jpeg"
+      }
+    ],
+    "name": "Música caribeña",
+    "type": "link",
+    "id": 23
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFHOzuVTgTizF",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Dance/Electrónica",
+    "type": "link",
+    "id": 24
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFF9bY76LXmfI",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/cad629fb65a14de4beddb38510e27cb1"
+      }
+    ],
+    "name": "Frequency",
+    "type": "link",
+    "id": 25
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFAUsdyVjCQuL",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/romance-274x274_8100794c94847b6d27858bed6fa4d91b_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Romance",
+    "type": "link",
+    "id": 26
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFy0OenPG51Av",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/icon-274x274_5ce6e0f681f0a76f9dcf9270dfd18489_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Música cristiana y góspel",
+    "type": "link",
+    "id": 27
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFGvOw3O4nLAf",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/2078afd91e4d431eb19efc5bee5ab131.jpeg"
+      }
+    ],
+    "name": "K-pop",
+    "type": "link",
+    "id": 28
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFy78wprEpAjl",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/7fe0f2c9c91f45a3b6bae49d298201a4.jpeg"
+      }
+    ],
+    "name": "Folk & acústica",
+    "type": "link",
+    "id": 29
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFAJ5xb0fwo9m",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/568f37f1cab54136939d63bd1f59d40c"
+      }
+    ],
+    "name": "Jazz",
+    "type": "link",
+    "id": 30
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFRKBHIxJ5hMm",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/b4182906bf244b4994805084c057e9ee.jpeg"
+      }
+    ],
+    "name": "Creadores de tendencias",
+    "type": "link",
+    "id": 31
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFNT6Du8qM9kt",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/categories/brazilian_274x274.jpg"
+      }
+    ],
+    "name": "Música brasileña",
+    "type": "link",
+    "id": 32
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFIVNxQgRNSg0",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/b611cf5145764c64b80e91ccd5f357c8"
+      }
+    ],
+    "name": "Décadas",
+    "type": "link",
+    "id": 33
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFOzQeOmemkuw",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/3be0105e-cc31-4bf2-9958-05568b12370d.jpg"
+      }
+    ],
+    "name": "Televisión y películas",
+    "type": "link",
+    "id": 34
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFPrEiAOxgac3",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/classical-274x274_abf78251ff3d90d2ceaf029253ca7cb4_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Clásica",
+    "type": "link",
+    "id": 35
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFEZPnFQSFB1T",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/r-b-274x274_fd56efa72f4f63764b011b68121581d8_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Rhythm & Blues",
+    "type": "link",
+    "id": 36
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFDkd668ypn6O",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/original/metal_27c921443fd0a5ba95b1b2c2ae654b2b_274x274.jpg"
+      }
+    ],
+    "name": "Metal",
+    "type": "link",
+    "id": 37
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFAQy4HL4XU2D",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/travel-274x274_1e89cd5b42cf8bd2ff8fc4fb26f2e955_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Viajes",
+    "type": "link",
+    "id": 38
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFIpEuaCnimBj",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/soul-274x274_266bc900b35dda8956380cffc73a4d8c_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Soul",
+    "type": "link",
+    "id": 39
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFKLfwjuJMoNC",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/a2e0ebe2ebed4566ba1d8236b869241f.jpeg"
+      }
+    ],
+    "name": "Country",
+    "type": "link",
+    "id": 40
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFQiK2EHwyjcU",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/6fe5cd3ebc8c4db7bb8013152b153505"
+      }
+    ],
+    "name": "Blues",
+    "type": "link",
+    "id": 41
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFRY5ok2pxXJ0",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/original/dinner_1b6506abba0ba52c54e6d695c8571078_274x274.jpg"
+      }
+    ],
+    "name": "Hora de la comida",
+    "type": "link",
+    "id": 42
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFAjfauKLOZiv",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/punk-274x274_f3f1528ea7bbb60a625da13e3315a40b_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Punk",
+    "type": "link",
+    "id": 43
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/in_the_car-page",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/57017d435c344bb28efba325b7c9e7c6.jpeg"
+      }
+    ],
+    "name": "En el auto",
+    "type": "link",
+    "id": 44
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/funk",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/f4f0987fcab446fcaa7173acb5e25701.jpeg"
+      }
+    ],
+    "name": "Funk",
+    "type": "link",
+    "id": 45
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFFoimhOqWzLB",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/664bb84f7a774e1eadb7c227aed98f3c"
+      }
+    ],
+    "name": "Niños y familia",
+    "type": "link",
+    "id": 46
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/comedy-page",
+    "images": [
+      {
+        "url": "https://t.scdn.co/media/derived/comedy-274x274_d07fcbc1202f00f8684f37742d0a4f2f_0_0_274_274.jpg"
+      }
+    ],
+    "name": "Comedia",
+    "type": "link",
+    "id": 47
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFNQ0fGp4byGU",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/b505b01bbe0e490cbe43b07f16212892.jpeg"
+      }
+    ],
+    "name": "Afro",
+    "type": "link",
+    "id": 48
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFQFQN0rnK48G",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/37780cd0347248e38195515fc7ca061a.jpeg"
+      }
+    ],
+    "name": "Flamenco",
+    "type": "link",
+    "id": 49
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFRieVZLLoo9m",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/384c2b595a1648aa801837ff99961188"
+      }
+    ],
+    "name": "Instrumental",
+    "type": "link",
+    "id": 50
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFSCjnQr8QZ3O",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/dd784b78559f4f1d8ef0e833c7db5db3"
+      }
+    ],
+    "name": "Compositores",
+    "type": "link",
+    "id": 51
+  },
+  {
+    "href": "https://api.spotify.com/v1/views/0JQ5DAqbMKFLjmiZRss79w",
+    "images": [
+      {
+        "url": "https://t.scdn.co/images/9210c5a26e6a4b4da2c3ea8e5f87fff8"
+      }
+    ],
+    "name": "Ambient",
+    "type": "link",
+    "id": 52
+  }
+]
