@@ -15,6 +15,8 @@ const router = jsonServer.router({
   ]
 })
 
+const fetch = require('node-fetch')
+
 app.use(express.json())
 
 dotenv.config();
