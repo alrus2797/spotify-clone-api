@@ -171,6 +171,34 @@ app.post('/add-to-playlist/:playlistId', (req, res, next) => {
   }
 })
 
+app.delete('/remove-from-playlist/:playlistId/:itemId', (req, res, next) => {
+  const {playlistId, itemId} = req.params
+  console.log('remove-from-playlist', req.body, playlistId, itemId)
+
+  if (!req.headers.authorization) {
+    res.status(401)
+    res.json({
+      message: 'No token provided',
+    })
+  } else {
+    fetch(`${req.protocol}://${req.headers.host}/library-items?entity.type=ownPlaylist&id=${playlistId}`).then(data=>data.json())
+    .then(data => {
+      console.log('items', data)
+      const items = data[0].entity.items
+      const newItems = items.filter(item => item.id !== itemId)
+      console.log('newItems', newItems)
+      fetch(`${req.protocol}://${req.headers.host}/library-items/${data[0].id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({entity: {...data[0].entity, items: newItems}})
+      }).then(data => data.json()).then(data=>res.json(data))
+    }).catch(err => console.log('Error while removing from playlist', err))
+  }
+})
+
+
 app.post('/playlist', (req, res, next) => {
   console.log(req.body);
   if (!req.headers.authorization) {
