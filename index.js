@@ -12,6 +12,17 @@ const router = jsonServer.router({
   sections: require('./db_files/sections.json'),
   users: require('./db_files/users.json'),
   'library-items': [
+    {
+      "entity": {
+        "name": "Liked songs",
+        "items": [],
+        "type": "ownPlaylist",
+        "id": "favorites",
+        "image": "https://misc.scdn.co/liked-songs/liked-songs-64.png"
+      },
+      "userId": 1,
+      "id": "favorites-1"
+    }
   ]
 })
 
@@ -91,6 +102,46 @@ app.get('/search/:text', (req, res, next) => {
 })
 
 
+app.use('/register', (req, res, next) => {
+  console.log('Register middleware for', req.body)
+  res.on('finish', () => {
+    console.log('Register middleware on finish here for', req.body, req.headers.host)
+
+    fetch(`${req.protocol}://${req.headers.host}/users?email=${req.body.email}`).then(data=>data.json()).then(data => {
+      if (data.length === 0) throw Error('User was not created for some reason')
+      const user = data[0];
+      console.log('user', user)
+
+      fetch(`${req.protocol}://${req.headers.host}/library-items`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Authorization': req.headers.authorization
+        },
+        body: JSON.stringify({
+          entity: {
+            name: "Liked songs",
+            items: [],
+            type: "ownPlaylist",
+            id: "favorites",
+            image: "https://misc.scdn.co/liked-songs/liked-songs-64.png"
+          },
+          userId: user.id,
+          id: `favorites-${user.id}`
+        })
+      }).then(data => {
+        return  data.text()
+      }).then(data => {
+        console.log('favorites', data)
+      }).catch(err => console.log('Error while creating favorites', err))
+    })
+  })
+  next();
+})
+
+
+
 app.post('/add-to-playlist/:playlistId', (req, res, next) => {
 
   const {playlistId} = req.params
@@ -102,7 +153,7 @@ app.post('/add-to-playlist/:playlistId', (req, res, next) => {
       message: 'No token provided',
     })
   } else {
-    fetch(`${req.protocol}://${req.headers.host}/library-items?entity.type=ownPlaylist&entity.id=${playlistId}`).then(data=>data.json())
+    fetch(`${req.protocol}://${req.headers.host}/library-items?entity.type=ownPlaylist&id=${playlistId}`).then(data=>data.json())
     .then(data => {
       console.log('items', data)
       const items = data[0].entity.items
@@ -163,33 +214,38 @@ app.post('/playlist', (req, res, next) => {
 })
 
 
-app.use('/register', (req, res, next) => {
-  console.log('A new playlist will be created here for', req.body)
-  res.on('finish', () => {
-    console.log('A new playlist will be created on finish here for', req.body)
+// app.use('/register', (req, res, next) => {
+//   console.log('A new playlist will be created here for', req.body)
+//   res.on('finish', () => {
+//     console.log('A new playlist will be created on finish here for', req.body)
 
-  })
-  next(); 
-})
+//   })
+//   next(); 
+// })
 
-app.use('/libray-items', (req, res, next) => {
-  res.on('finish', () => {
-    if (req.method !=='POST') return;
-    fetch(`${req.headers.host}/library-items?userId=${req.body.userId}&`)
-      .then(data => data.json())
-      .then(data => {
-        console.log('parsed data: ', data)
-        fetch(`${req.headers.host}/libraries`, {
-          method: 'POST',
-          body: {
-            userId: data.id,
-            items: []
-          }
-        })
-      })
-  })
-  next()
-})
+// app.use('/libray-items', (req, res, next) => {
+//   res.on('finish', () => {
+//     if (req.method !=='POST') return;
+//     fetch(`${req.headers.host}/library-items?userId=${req.body.userId}&`)
+//       .then(data => data.json())
+//       .then(data => {
+//         console.log('parsed data: ', data)
+//         fetch(`${req.headers.host}/libraries`, {
+//           method: 'POST',
+//           body: {
+//             userId: data.id,
+//             items: []
+//           }
+//         })
+//       })
+//   })
+//   next()
+// })
+
+// app.use(jsonServer.rewriter({
+//   '/only-library-items/:userId': '/users/:userId/library-items?entity.id_ne=favorites',
+//   })
+// )
 
 
 app.use(auth)
