@@ -241,6 +241,45 @@ app.post('/playlist', (req, res, next) => {
   }
 })
 
+app.get('/entity/:type/:id', (req, res, next) => {
+  const {type, id} = req.params
+  console.log('entity', type, id)
+  switch (type) {
+    case 'ownPlaylist':
+      fetch(`${req.protocol}://${req.headers.host}/library-items?entity.type=ownPlaylist&id=${id}`).then(data=>data.json())
+      .then(data => {
+        console.log('items', data)
+        res.json(data[0])
+      }).catch(err => console.log(err))
+      break;
+    case 'artist':
+      spotifyWebApi.getArtist(id).then(data => {
+        console.log('artist', data.body)
+        res.json(data.body)
+      }).catch(err => console.log(err))
+      break;
+    case 'album':
+      spotifyWebApi.getAlbum(id).then(data => {
+        console.log('album', data.body)
+        res.json(data.body)
+      }).catch(err => console.log(err))
+      break;
+    case 'track':
+      spotifyWebApi.getTrack(id).then(data => {
+        console.log('track', data.body)
+        res.json(data.body)
+      }).catch(err => console.log(err))
+      break;
+    default:
+      res.status(404)
+      res.json({
+        message: 'Entity type not found'
+      })
+      break;
+  }
+})
+
+
 
 // app.use('/register', (req, res, next) => {
 //   console.log('A new playlist will be created here for', req.body)
