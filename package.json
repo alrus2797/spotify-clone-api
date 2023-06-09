@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon bump_files/index.js",
+    "start-bump": "nodemon bump_files/index.mjs",
     "server": "json-server-auth db_files/all-dbs.cjs",
+    "start-dev": "nodemon index.js",
     "start-deploy": "node index.js",
     "test-promises": "ts-node requests.ts"
   },
