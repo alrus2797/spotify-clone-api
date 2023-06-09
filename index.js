@@ -11,19 +11,7 @@ const router = jsonServer.router({
   categories: require('./db_files/categories-en.json'),
   sections: require('./db_files/sections.json'),
   users: require('./db_files/users.json'),
-  'library-items': [
-    {
-      "entity": {
-        "name": "Liked songs",
-        "items": [],
-        "type": "ownPlaylist",
-        "id": "favorites",
-        "image": "https://misc.scdn.co/liked-songs/liked-songs-64.png"
-      },
-      "userId": 1,
-      "id": "favorites-1"
-    }
-  ]
+  'library-items': require('./db_files/library-items.json')
 })
 
 const fetch = require('node-fetch')
@@ -57,19 +45,11 @@ setInterval(() => {
   })
 }, 3600*60)
 
-
-
-
-
-
 const middlewares = jsonServer.defaults();
 
-const port = process.env.PORT || 3000
 
-// /!\ Bind the router db to the app
 app.db = router.db
 
-// You must apply the auth middleware before the router
 app.use(middlewares)
 
 
@@ -98,7 +78,6 @@ app.get('/search/:text', (req, res, next) => {
   spotifyWebApi.search(text, local_search_options, query).then(data => {
     res.send(data.body);
   })
-  // return spotifyWebApi.search(query)
 })
 
 
@@ -207,12 +186,6 @@ app.post('/playlist', (req, res, next) => {
       message: 'No token provided'
     })
   }
-  // else if (req.body.entity.type === 'ownPlaylist'){
-  //   res.status(400)
-  //   res.json({
-  //     message: 'Entity type must be a ownPlaylist'
-  //   })
-  // }
   else {
     console.log('host', req.headers.host, req.protocol)
     fetch(`${req.protocol}://${req.headers.host}/library-items?entity.type=ownPlaylist&userId=${req.body.userId}`).then(data=>data.json())
@@ -279,50 +252,11 @@ app.get('/entity/:type/:id', (req, res, next) => {
   }
 })
 
-
-
-// app.use('/register', (req, res, next) => {
-//   console.log('A new playlist will be created here for', req.body)
-//   res.on('finish', () => {
-//     console.log('A new playlist will be created on finish here for', req.body)
-
-//   })
-//   next(); 
-// })
-
-// app.use('/libray-items', (req, res, next) => {
-//   res.on('finish', () => {
-//     if (req.method !=='POST') return;
-//     fetch(`${req.headers.host}/library-items?userId=${req.body.userId}&`)
-//       .then(data => data.json())
-//       .then(data => {
-//         console.log('parsed data: ', data)
-//         fetch(`${req.headers.host}/libraries`, {
-//           method: 'POST',
-//           body: {
-//             userId: data.id,
-//             items: []
-//           }
-//         })
-//       })
-//   })
-//   next()
-// })
-
-// app.use(jsonServer.rewriter({
-//   '/only-library-items/:userId': '/users/:userId/library-items?entity.id_ne=favorites',
-//   })
-// )
-
-
 app.use(auth)
-
-
-
 app.use(router)
 
 
-
+const port = process.env.PORT || 3000
 app.listen(port, () => {
   console.log('App started on', port)
 }).on('error', (e) => {

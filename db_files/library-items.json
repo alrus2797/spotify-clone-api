@@ -1,0 +1,13 @@
+[
+  {
+    "entity": {
+      "name": "Liked songs",
+      "items": [],
+      "type": "ownPlaylist",
+      "id": "favorites",
+      "image": "https://misc.scdn.co/liked-songs/liked-songs-64.png"
+    },
+    "userId": 1,
+    "id": "favorites-1"
+  }
+]
