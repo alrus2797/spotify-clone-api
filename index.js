@@ -231,6 +231,12 @@ app.get('/entity/:type/:id', (req, res, next) => {
         res.json(data.body)
       }).catch(err => console.log(err))
       break;
+    case 'playlist':
+      spotifyWebApi.getPlaylist(id).then(data => {
+        console.log('playlist', data.body)
+        res.json(data.body)
+      }).catch(err => console.log(err))
+      break;
     case 'album':
       spotifyWebApi.getAlbum(id).then(data => {
         console.log('album', data.body)
