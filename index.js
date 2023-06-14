@@ -7,12 +7,14 @@ const dotenv = require("dotenv");
 const express = require('express')
 
 const app = jsonServer.create()
-const router = jsonServer.router({
-  categories: require('./db_files/categories-en.json'),
-  sections: require('./db_files/sections.json'),
-  users: require('./db_files/users.json'),
-  'library-items': require('./db_files/library-items.json')
-})
+// const router = jsonServer.router({
+//   categories: require('./db_files/categories-en.json'),
+//   sections: require('./db_files/sections.json'),
+//   users: require('./db_files/users.json'),
+//   'library-items': require('./db_files/library-items.json')
+// })
+
+const router = jsonServer.router('./db_files/db.json')
 
 const fetch = require('node-fetch')
 
